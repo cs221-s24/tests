@@ -1,0 +1,60 @@
+[[tests]]
+name = "test01"
+input = ["./$project", "test01.txt"]
+expected = "1"
+rubric = 10
+
+[[tests]]
+name = "test02"
+input = ["./$project", "test02.txt"]
+expected = "2"
+rubric = 10
+
+[[tests]]
+name = "test03"
+input = ["./$project", "test03.txt"]
+expected = "-1"
+rubric = 10
+
+[[tests]]
+name = "test04"
+input = ["./$project", "test04.txt"]
+expected = "2"
+rubric = 10
+
+[[tests]]
+name = "test05"
+input = ["./$project", "test05.txt"]
+expected = "-1"
+rubric = 10
+
+[[tests]]
+name = "test06"
+input = ["./$project", "test06.txt"]
+expected = "7"
+rubric = 10
+
+[[tests]]
+name = "test07"
+input = ["./$project", "test07.txt"]
+expected = "-1"
+rubric = 10
+
+[[tests]]
+name = "test08"
+input = ["./$project", "test08.txt"]
+expected = "-1"
+rubric = 10
+
+[[tests]]
+name = "test09"
+input = ["./$project", "test09.txt"]
+expected = "2"
+rubric = 10
+
+[[tests]]
+name = "test10"
+input = ["./$project", "test10.txt"]
+expected = "-1"
+rubric = 10
+
