@@ -1,0 +1,41 @@
+[[tests]]
+name = "add_print_test"
+input = ["./$project", "0"]
+expected = "[[k0,v0],[k1,v1],[k2,v2],[k3,v3],[k4,v4],[k5,v5],[k6,v6],[k7,v7],[k8,v8],[k9,v9]]"
+rubric = 10
+
+[[tests]]
+name = "get_found_test"
+input = ["./$project", "1"]
+expected = "k3's value is v3\nk7's value is v7"
+rubric = 10
+
+[[tests]]
+name = "get_fail_test"
+input = ["./$project", "2"]
+expected = "k11 is not found"
+rubric = 10
+
+[[tests]]
+name = "get_edge_test"
+input = ["./$project", "3"]
+expected = "k0's value is v0\nk9's value is v9"
+rubric = 10
+
+[[tests]]
+name = "delete_get_test"
+input = ["./$project", "4"]
+expected = "k4's value is v4\nk4 is not found"
+rubric = 20
+
+[[tests]]
+name = "delete_edge_test"
+input = ["./$project", "5"]
+expected = "[[k9,v9],[k8,v8],[k7,v7],[k6,v6],[k5,v5],[k4,v4],[k3,v3],[k2,v2],[k1,v1]]\n[[k8,v8],[k7,v7],[k6,v6],[k5,v5],[k4,v4],[k3,v3],[k2,v2],[k1,v1]]"
+rubric = 20
+
+[[tests]]
+name = "delete_add_test"
+input = ["./$project", "6"]
+expected = "[[k9,v9],[k8,v8],[k7,v7],[k6,v6],[k5,v5],[k3,v3],[k2,v2],[k1,v1],[k0,v0]]\nk4's value is v4"
+rubric = 20
