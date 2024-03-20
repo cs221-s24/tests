@@ -1,0 +1,60 @@
+[[tests]]
+
+name = "test01"
+input = ["./$project", "-d", "0b1101"]
+expected = "13"
+rubric = 10
+
+[[tests]]
+name = "test02"
+input = ["./$project", "-h", "0b1101"]
+expected = "0xD"
+rubric = 10
+
+[[tests]]
+name = "test03"
+input = ["./$project", "-d", "0x1234"]
+expected = "4660"
+rubric = 10
+
+name = "test04"
+input = ["./$project", "-b", "1234"]
+expected = "0b10011010010"
+rubric = 10
+
+[[tests]]
+name = "test05"
+input = ["./$project", "-b", "0x1234"]
+expected = "0b0001001000110100"
+rubric = 10
+
+[[tests]]
+name = "test06"
+input = ["./$project", "-h", "1234"]
+expected = "0x4D2"
+rubric = 10
+
+[[tests]]
+name = "test07"
+input = ["./$project", "-d", "0x3272024"]
+expected = "52895780"
+rubric = 10
+
+[[tests]]
+name = "test08"
+input = ["./$project", "-b", "3272024"]
+expected = "0b1100011110110101011000"
+rubric = 10
+
+[[tests]]
+name = "test09"
+input = ["./$project", "-h", "3272024"]
+expected = "0x31ED58"
+rubric = 10
+
+[[tests]]
+name = "test10"
+input = ["./$project", "-b, "0xA1B2C3D4"]
+expected = "0b10100001101100101100001111010100"
+rubric = 10
+
