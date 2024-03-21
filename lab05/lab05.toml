@@ -1,5 +1,4 @@
 [[tests]]
-
 name = "test01"
 input = ["./$project", "-d", "0b1101"]
 expected = "13"
@@ -17,6 +16,7 @@ input = ["./$project", "-d", "0x1234"]
 expected = "4660"
 rubric = 10
 
+[[tests]]
 name = "test04"
 input = ["./$project", "-b", "1234"]
 expected = "0b10011010010"
@@ -54,7 +54,7 @@ rubric = 10
 
 [[tests]]
 name = "test10"
-input = ["./$project", "-b, "0xA1B2C3D4"]
+input = ["./$project", "-b", "0xA1B2C3D4"]
 expected = "0b10100001101100101100001111010100"
 rubric = 10
 
