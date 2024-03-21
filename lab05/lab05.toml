@@ -19,7 +19,7 @@ rubric = 10
 [[tests]]
 name = "test04"
 input = ["./$project", "-b", "1234"]
-expected = "0b10011010010"
+expected = "0b010011010010"
 rubric = 10
 
 [[tests]]
@@ -43,7 +43,7 @@ rubric = 10
 [[tests]]
 name = "test08"
 input = ["./$project", "-b", "3272024"]
-expected = "0b1100011110110101011000"
+expected = "0b001100011110110101011000"
 rubric = 10
 
 [[tests]]
