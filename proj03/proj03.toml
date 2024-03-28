@@ -1,0 +1,41 @@
+[[tests]]
+name = "add_print_test"
+input = ["./$project", "0"]
+expected = "Map has 10 (key, value) pairs.\n[[k1,v1],[k7,v7]]\n[[k5,v5]]\n[[k3,v3]]\n[[k6,v6]]\n[[k9,v9]]\n[[k0,v0]]\n[[k8,v8]]\n[[k4,v4]]\n[[k2,v2]]"
+rubric = 10
+
+[[tests]]
+name = "get_found_test"
+input = ["./$project", "1"]
+expected = "k3's value is v3\nk7's value is v7"
+rubric = 10
+
+[[tests]]
+name = "get_fail_test"
+input = ["./$project", "2"]
+expected = "k21 is not found"
+rubric = 10
+
+[[tests]]
+name = "get_edge_test"
+input = ["./$project", "3"]
+expected = "k1's value is v1\nk11's value is v11"
+rubric = 10
+
+[[tests]]
+name = "delete_get_test"
+input = ["./$project", "4"]
+expected = "k4's value is v4\nMap has 20 (key, value) pairs.\nMap has 19 (key, value) pairs.\nk4 is not found"
+rubric = 20
+
+[[tests]]
+name = "delete_edge_test"
+input = ["./$project", "5"]
+expected = "[[k10,v10],[k7,v7],[k1,v1]]\n[[k5,v5]]\n[[k3,v3]]\n[[k14,v14],[k6,v6]]\n[[k18,v18]]\n[[k16,v16]]\n[[k12,v12]]\n[[k9,v9]]\n[[k15,v15],[k0,v0]]\n[[k17,v17],[k13,v13]]\n [[k19,v19]]\n[[k8,v8]]\n[[k4,v4]]\n[[k2,v2]]\n[[k11,v11]]\n\nafter deleting k10\n[[k7,v7],[k1,v1]]\n[[k5,v5]]\n[[k3,v3]]\n[[k14,v14],[k6,v6]]\n[[k18,v18]]\n[[k16,v16]]\n[[k12,v12]]\n[[k9,v9]]\n[[k15,v15],[k0,v0]]\n[[k17,v17],[k13,v13]]\n [[k19,v19]]\n[[k8,v8]]\n[[k4,v4]]\n[[k2,v2]]\n[[k11,v11]]\n\nafter deleting k11\n[[k7,v7],[k1,v1]]\n[[k5,v5]]\n[[k3,v3]]\n[[k14,v14],[k6,v6]]\n[[k18,v18]]\n[[k16,v16]]\n[[k12,v12]]\n[[k9,v9]]\n[[k15,v15],[k0,v0]]\n[[k17,v17],[k13,v13]]\n [[k19,v19]]\n[[k8,v8]]\n[[k4,v4]]\n[[k2,v2]]"
+rubric = 20
+
+[[tests]]
+name = "delete_add_test"
+input = ["./$project", "6"]
+expected = "k4 is not found\nk4's value is v4"
+rubric = 20
